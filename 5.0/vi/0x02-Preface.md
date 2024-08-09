@@ -1,0 +1,33 @@
+# Lời mở đầu
+
+Chào mừng bạn đến với Tiêu chuẩn Xác minh Bảo mật Ứng dụng (ASVS) phiên bản 4.0. ASVS là một nỗ lực cộng đồng nhằm thiết lập một tiêu chuẩn xác định các yêu cầu bảo mật chức năng và phi chức năng cần xem xét khi thiết kế, phát triển và kiểm tra các ứng dụng web và dịch vụ web hiện đại.
+
+Phiên bản 4.0.2 là bản vá nhỏ thứ hai cho v4.0 nhằm mục đích sửa lỗi chính tả và làm rõ các yêu cầu mà không thay đổi các yêu cầu hiện có hoặc thêm/xóa yêu cầu.
+
+Phiên bản này là phiên bản "Bleeding Edge" (tiên phong) liên tục được cập nhật và không nên được sử dụng để kiểm tra theo một tiêu chuẩn.
+
+ASVS v4.0 là kết quả của nỗ lực cộng đồng và phản hồi từ ngành công nghiệp trong thập kỷ qua. Chúng tôi đã cố gắng làm cho việc áp dụng ASVS dễ dàng hơn cho nhiều trường hợp sử dụng khác nhau trong suốt vòng đời phát triển phần mềm an toàn.
+
+Chúng tôi dự đoán rằng rất có thể sẽ không bao giờ có sự đồng thuận 100% về nội dung của bất kỳ tiêu chuẩn ứng dụng web nào, bao gồm cả ASVS. Phân tích rủi ro luôn luôn mang tính chủ quan ở một mức độ nào đó, tạo ra một thách thức khi cố gắng khái quát hóa trong một tiêu chuẩn phù hợp với tất cả. Tuy nhiên, chúng tôi hy vọng rằng các cập nhật mới nhất được thực hiện trong phiên bản này là một bước đi đúng hướng và nâng cao các khái niệm được giới thiệu trong tiêu chuẩn quan trọng này của ngành.
+
+## Có gì mới trong 4.0
+
+Thay đổi đáng kể nhất trong phiên bản này là việc áp dụng Hướng dẫn Nhận dạng Kỹ thuật số NIST SP 800-63-3, giới thiệu các biện pháp kiểm soát xác thực hiện đại, dựa trên bằng chứng và nâng cao. Mặc dù chúng tôi dự đoán sẽ có một số phản đối về việc tuân thủ một tiêu chuẩn xác thực nâng cao, chúng tôi cảm thấy rằng việc các tiêu chuẩn được liên kết là điều cần thiết, đặc biệt là khi một tiêu chuẩn bảo mật ứng dụng được đánh giá cao khác dựa trên bằng chứng.
+
+Các tiêu chuẩn bảo mật thông tin nên cố gắng giảm thiểu số lượng yêu cầu duy nhất để các tổ chức tuân thủ không phải quyết định về các biện pháp kiểm soát cạnh tranh hoặc không tương thích. OWASP Top 10 2017 và bây giờ là Tiêu chuẩn Xác minh Bảo mật Ứng dụng OWASP đã liên kết với NIST SP 800-63 để xác thực và quản lý phiên. Chúng tôi khuyến khích các tổ chức thiết lập tiêu chuẩn khác hợp tác với chúng tôi, NIST và những tổ chức khác trong việc thiết lập một bộ kiểm soát bảo mật ứng dụng được chấp nhận rộng rãi. Cách tiếp cận này sẽ tối đa hóa bảo mật đồng thời giảm thiểu chi phí tuân thủ.
+
+ASVS 4.0 đã được đánh số lại hoàn toàn từ đầu đến cuối. Sơ đồ đánh số mới cho phép chúng tôi đóng các khoảng trống từ các chương đã biến mất từ lâu và cho phép chúng tôi phân đoạn các chương dài hơn để giảm thiểu số lượng kiểm soát mà một nhà phát triển hoặc nhóm phải tuân thủ. Ví dụ: nếu một ứng dụng không sử dụng JWT, toàn bộ phần về JWT trong quản lý phiên sẽ không áp dụng.
+
+Điều mới trong 4.0 là một bản đồ toàn diện đến Common Weakness Enumeration (CWE), một trong những yêu cầu tính năng được mong muốn nhất mà chúng tôi đã nhận được trong thập kỷ qua. Bản đồ CWE cho phép các nhà sản xuất công cụ và những người sử dụng phần mềm quản lý lỗ hổng đối chiếu kết quả từ các công cụ khác và các phiên bản ASVS trước đó với 4.0 trở lên. Để tạo chỗ cho mục CWE, chúng tôi đã phải loại bỏ cột "Since" (Kể từ), điều này ít có ý nghĩa hơn trong các phiên bản trước của ASVS khi chúng tôi đã đánh số lại hoàn toàn. Không phải mọi mục trong ASVS đều có CWE liên quan, và vì CWE có rất nhiều sự trùng lặp, chúng tôi đã cố gắng sử dụng các mục được sử dụng phổ biến nhất thay vì nhất thiết phải là mục phù hợp nhất. Các biện pháp kiểm soát xác minh không phải lúc nào cũng có thể ánh xạ tới các điểm yếu tương đương. Chúng tôi hoan nghênh các cuộc thảo luận đang diễn ra với cộng đồng CWE và lĩnh vực bảo mật thông tin nói chung về việc thu hẹp khoảng cách này.
+
+Chúng tôi đã làm việc để đáp ứng và vượt qua một cách toàn diện các yêu cầu để giải quyết OWASP Top 10 2017 và OWASP Proactive Controls 2018. Vì OWASP Top 10 2017 là mức tối thiểu để tránh sự sơ suất, chúng tôi đã cố tình biến tất cả các yêu cầu Top 10, ngoại trừ các yêu cầu ghi nhật ký cụ thể, thành các kiểm soát Cấp 1, giúp những người áp dụng OWASP Top 10 dễ dàng chuyển sang một tiêu chuẩn bảo mật thực sự.
+
+Chúng tôi đặt mục tiêu đảm bảo rằng ASVS 4.0 Cấp 1 là một tập hợp toàn diện của PCI DSS 3.2.1 Mục 6.5, dành cho thiết kế ứng dụng, mã hóa, kiểm tra, đánh giá mã an toàn và kiểm tra thâm nhập. Điều này đòi hỏi phải bao gồm tràn bộ đệm và các hoạt động bộ nhớ không an toàn trong V5, và các cờ biên dịch liên quan đến bộ nhớ không an toàn trong V14, ngoài các yêu cầu xác minh ứng dụng và dịch vụ web hàng đầu hiện có trong ngành.
+
+Chúng tôi đã hoàn thành việc chuyển đổi ASVS từ các biện pháp kiểm soát tập trung vào phía máy chủ sang cung cấp các biện pháp kiểm soát bảo mật cho tất cả các ứng dụng và API hiện đại. Trong thời đại của lập trình hàm, API không máy chủ, di động, đám mây, container, CI/CD và DevSecOps, liên kết và hơn thế nữa, chúng ta không thể tiếp tục bỏ qua kiến trúc ứng dụng hiện đại. Các ứng dụng hiện đại được thiết kế rất khác so với những ứng dụng được xây dựng khi ASVS ban đầu được phát hành vào năm 2009. ASVS phải luôn luôn nhìn xa vào tương lai để chúng tôi cung cấp lời khuyên đúng đắn cho đối tượng chính của chúng tôi - các nhà phát triển. Chúng tôi đã làm rõ hoặc loại bỏ bất kỳ yêu cầu nào giả định rằng các ứng dụng được thực thi trên các hệ thống thuộc sở hữu của một tổ chức duy nhất.
+
+Do kích thước của ASVS 4.0, cũng như mong muốn của chúng tôi trở thành ASVS cơ bản cho tất cả các nỗ lực ASVS khác, chúng tôi đã loại bỏ chương về di động, thay vào đó là Tiêu chuẩn Xác minh Bảo mật Ứng dụng Di động (MASVS). Chúng tôi cũng đã loại bỏ phụ lục về Internet of Things, thay vào đó là Tiêu chuẩn Xác minh Bảo mật IoT (ISVS). Chúng tôi cảm ơn cả Nhóm OWASP Mobile và Nhóm Dự án OWASP IoT vì sự hỗ trợ của họ đối với ASVS và mong muốn được làm việc với họ trong tương lai để cung cấp các tiêu chuẩn bổ sung.
+
+Cuối cùng, chúng tôi đã loại bỏ các biện pháp kiểm soát trùng lặp và ít tác động hơn. Theo thời gian, ASVS bắt đầu trở thành một bộ kiểm soát toàn diện, nhưng không phải tất cả các kiểm soát đều đóng góp như nhau vào việc tạo ra phần mềm an toàn. Nỗ lực loại bỏ các mục có tác động thấp này có thể đi xa hơn. Trong một phiên bản tương lai của ASVS, Hệ thống Đánh giá Điểm Yếu Chung (CWSS) sẽ giúp ưu tiên hơn nữa những biện pháp kiểm soát thực sự quan trọng và những biện pháp kiểm soát nên được loại bỏ.
+
+Kể từ phiên bản 4.0, ASVS sẽ tập trung duy nhất vào việc trở thành tiêu chuẩn hàng đầu về ứng dụng web và dịch vụ, bao gồm kiến trúc ứng dụng truyền thống và hiện đại, thực hành bảo mật nhanh nhẹn và văn hóa DevSecOps.
