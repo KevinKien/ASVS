@@ -6,8 +6,8 @@ Do đó, nó tập trung vào nội dung của ứng dụng chứ không phải 
 
 Trong bối cảnh các yêu cầu an toàn, ASVS sẽ hữu ích cho bất kỳ ai đang cố gắng:
 
-- Phát triển và duy trì các ứng dụng an toàn.
-- Đánh giá tính bảo mật của các ứng dụng.
+* Phát triển và duy trì các ứng dụng an toàn.
+* Đánh giá tính bảo mật của các ứng dụng.
 
 Chương này sẽ đề cập đến một số khía cạnh chính của việc sử dụng ASVS bao gồm sử dụng các cấp độ để áp dụng cách tiếp cận dựa trên rủi ro và các trường hợp sử dụng khác nhau cho tiêu chuẩn.
 
