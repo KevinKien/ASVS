@@ -24,7 +24,7 @@ Các tổ chức chứng nhận có thể tự do lựa chọn (các) phương p
 
 Tùy thuộc vào ứng dụng đang được kiểm tra và yêu cầu xác minh, các phương pháp kiểm tra khác nhau có thể được sử dụng để đạt được sự tin cậy tương tự về kết quả. Ví dụ: xác thực hiệu quả của cơ chế xác minh đầu vào của ứng dụng có thể được đánh giá thông qua kiểm tra thâm nhập thủ công hoặc bằng cách tiến hành phân tích mã nguồn.
 
-#### The Role of Automated Security Testing Tools 
+#### The Role of Automated Security Testing Tools
 
 Việc sử dụng các công cụ kiểm tra thâm nhập tự động được khuyến khích để cung cấp phạm vi phủ sóng càng nhiều càng tốt.
 
